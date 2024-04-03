@@ -1,0 +1,50 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* Media Query para pantallas menores a 768px */
+@media only screen and (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+      padding: 10px;
+    }
+  }
+
+  /* Media Query para pantallas menores a 576px */
+@media only screen and (max-width: 576px) {
+    .modal-content {
+      width: 95%;
+      padding: 10px;
+    }
+  }
